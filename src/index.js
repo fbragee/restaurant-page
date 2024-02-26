@@ -1,3 +1,3 @@
-import display from './home.js';
+import initalLoad from "./pageLoad";
 
-display();
+initalLoad();
