@@ -10,23 +10,33 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/home.js":
-/*!*********************!*\
-  !*** ./src/home.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (display);\n\nfunction display() {\n\tconst headLine = document.createElement('h2');\n\tconst contentDiv = document.querySelector('#content');\n\tconst container = document.createElement('div');\n\tconst contentImg = document.createElement('img');\n\tconst subText = document.createElement('p');\n\n\theadLine.textContent = 'Sea Breeze';\n\tcontainer.appendChild(headLine);\n\n\tcontentImg.src = 'https://vistapointe.net/images/restaurant-3.jpg';\n\n\tsubText.textContent =\n\t\t'Traditional Portuguese seafood restaurant, in an upscale venue';\n\tcontainer.appendChild(subText);\n\tcontainer.append(contentImg);\n\tcontentDiv.appendChild(container);\n}\n\n\n//# sourceURL=webpack://restaurant-page/./src/home.js?");
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n\n\n(0,_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _pageLoad__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pageLoad */ \"./src/pageLoad.js\");\n\n\n(0,_pageLoad__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack://restaurant-page/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/pageLoad.js":
+/*!*************************!*\
+  !*** ./src/pageLoad.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _restaurant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./restaurant */ \"./src/restaurant.js\");\n\n\nfunction initalLoad() {\n\t(0,_restaurant__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (initalLoad);\n\n\n//# sourceURL=webpack://restaurant-page/./src/pageLoad.js?");
+
+/***/ }),
+
+/***/ "./src/restaurant.js":
+/*!***************************!*\
+  !*** ./src/restaurant.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst createRestaurantHomePage = () => {\n\t//Content div\n\tconst content = document.querySelector(\"#content\");\n\tconst pageContent = document.createElement(\"div\");\n\tpageContent.classList.add(\"page-content\");\n\n\t//Image\n\tconst image = document.createElement(\"img\");\n\timage.src = \"https://vistapointe.net/images/restaurant-3.jpg\";\n\timage.width = \"300\";\n\tpageContent.appendChild(image);\n\n\t//Headline Element\n\tconst headline = document.createElement(\"h1\");\n\theadline.textContent = \"Sea Breeze\";\n\tpageContent.appendChild(headline);\n\n\t//Paragraph Element\n\tconst subText = document.createElement(\"p\");\n\tsubText.textContent = \"Traditional Portuguese seafood restaurant, in an upscale venue\";\n\tpageContent.appendChild(subText);\n\tcontent.appendChild(pageContent);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createRestaurantHomePage);\n\n\n//# sourceURL=webpack://restaurant-page/./src/restaurant.js?");
 
 /***/ })
 
