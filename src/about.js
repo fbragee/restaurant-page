@@ -7,7 +7,7 @@ function createAboutPage() {
 
 	const aboutH2 = document.createElement("h2");
 	aboutH2.classList.add("about-title");
-	aboutH2.innerText = "Menu";
+	aboutH2.innerText = "About Us";
 
 	const aboutP = document.createElement("p");
 	aboutP.classList.add("about-paragraph");
