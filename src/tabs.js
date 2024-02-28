@@ -6,7 +6,7 @@ export default createTabs;
 
 function createTabs() {
 	const content = document.querySelector("#content");
-
+	const tabDiv = document.createElement("div");
 	const div1 = document.createElement("div");
 	const div2 = document.createElement("div");
 	const div3 = document.createElement("div");
@@ -18,14 +18,17 @@ function createTabs() {
 	div1.classList.add("tab");
 	div2.classList.add("tab");
 	div3.classList.add("tab");
+	tabDiv.classList.add("tabDiv");
 
 	div1.textContent = "Home";
 	div2.textContent = "Menu";
 	div3.textContent = "About";
 
-	content.appendChild(div1);
-	content.appendChild(div2);
-	content.appendChild(div3);
+	tabDiv.appendChild(div1);
+	tabDiv.appendChild(div2);
+	tabDiv.appendChild(div3);
+
+	content.appendChild(tabDiv);
 
 	div1.addEventListener("click", () => {
 		clearContent();

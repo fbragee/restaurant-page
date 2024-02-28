@@ -21,8 +21,12 @@ function createMenuPage() {
 	menuList.appendChild(menuItem2);
 	menuList.appendChild(menuItem3);
 
-	pageContent.appendChild(heading);
-	pageContent.appendChild(menuList);
+	const header = document.createElement("header");
+	header.appendChild(heading);
+	header.appendChild(menuList);
+
+	pageContent.appendChild(header);
+
 	content.appendChild(pageContent);
 }
 

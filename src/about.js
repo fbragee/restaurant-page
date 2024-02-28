@@ -13,7 +13,11 @@ function createAboutPage() {
 	aboutP.classList.add("about-paragraph");
 	aboutP.innerText = "Best restaurant in the block, fresh caught fish served daily in delicious plates combined with local veggies, in order to create a light and healthy meal.";
 
-	pageContent.appendChild(aboutH2);
-	pageContent.appendChild(aboutP);
+	const header = document.createElement("header");
+	header.appendChild(aboutH2);
+	header.appendChild(aboutP);
+
+	pageContent.appendChild(header);
+
 	content.appendChild(pageContent);
 }
